@@ -38,17 +38,22 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/proprietary/vpu.b12:system/etc/firmware/vpu.b12:moto \
     vendor/moto/shamu/proprietary/vpu.mbn:system/etc/firmware/vpu.mbn:moto \
     vendor/moto/shamu/proprietary/vpu.mdt:system/etc/firmware/vpu.mdt:moto \
+    vendor/moto/shamu/proprietary/com.motorola.DirectedSMSProxy.xml:system/etc/permissions/com.motorola.DirectedSMSProxy.xml:moto \
+    vendor/moto/shamu/proprietary/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml:moto \
+    vendor/moto/shamu/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml:moto \
     vendor/moto/shamu/proprietary/General_cal.acdb:system/etc/General_cal.acdb:moto \
     vendor/moto/shamu/proprietary/Global_cal.acdb:system/etc/Global_cal.acdb:moto \
     vendor/moto/shamu/proprietary/Handset_cal.acdb:system/etc/Handset_cal.acdb:moto \
     vendor/moto/shamu/proprietary/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb:moto \
     vendor/moto/shamu/proprietary/Headset_cal.acdb:system/etc/Headset_cal.acdb:moto \
     vendor/moto/shamu/proprietary/Speaker_cal.acdb:system/etc/Speaker_cal.acdb:moto \
+    vendor/moto/shamu/proprietary/audio.motvr.default.so:system/lib/hw/audio.motvr.default.so:moto \
     vendor/moto/shamu/proprietary/libadspd-jni.so:system/lib/libadspd-jni.so:moto \
     vendor/moto/shamu/proprietary/libadspd.so:system/lib/libadspd.so:moto \
+    vendor/moto/shamu/proprietary/libmotaudioutils.so:system/lib/libmotaudioutils.so:moto \
     vendor/moto/shamu/proprietary/librecoglib.so:system/lib/librecoglib.so:moto \
     vendor/moto/shamu/proprietary/libsupermodel.so:system/lib/libsupermodel.so:moto \
-    vendor/moto/shamu/proprietary/libxml2.so:system/lib/libxml2.so:moto \
+    vendor/moto/shamu/proprietary/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto \
     vendor/moto/shamu/proprietary/acdb.mbn:system/vendor/firmware/acdb.mbn:moto \
     vendor/moto/shamu/proprietary/atmel-a432-14061601-0102aa-shamu-p1.tdat:system/vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat:moto \
     vendor/moto/shamu/proprietary/atmel-a432-14103001-0103aa-shamu.tdat:system/vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat:moto \

@@ -14,13 +14,18 @@
 
 # Qualcomm blob(s) necessary for Shamu hardware
 PRODUCT_COPY_FILES := \
+    vendor/qcom/shamu/proprietary/ATFWD-daemon:system/bin/ATFWD-daemon:qcom \
+    vendor/qcom/shamu/proprietary/cnd:system/bin/cnd:qcom \
     vendor/qcom/shamu/proprietary/bridgemgrd:system/bin/bridgemgrd:qcom \
     vendor/qcom/shamu/proprietary/diag_klog:system/bin/diag_klog:qcom \
     vendor/qcom/shamu/proprietary/diag_mdlog:system/bin/diag_mdlog:qcom \
     vendor/qcom/shamu/proprietary/diag_qshrink4_daemon:system/bin/diag_qshrink4_daemon:qcom \
+    vendor/qcom/shamu/proprietary/imsdatadaemon:system/bin/imsdatadaemon:qcom \
+    vendor/qcom/shamu/proprietary/imsqmidaemon:system/bin/imsqmidaemon:qcom \
     vendor/qcom/shamu/proprietary/irsc_util:system/bin/irsc_util:qcom \
     vendor/qcom/shamu/proprietary/ks:system/bin/ks:qcom \
     vendor/qcom/shamu/proprietary/mdm_helper:system/bin/mdm_helper:qcom \
+    vendor/qcom/shamu/proprietary/mdm_helper_proxy:system/bin/mdm_helper_proxy:qcom \
     vendor/qcom/shamu/proprietary/mm-qcamera-daemon:system/bin/mm-qcamera-daemon:qcom \
     vendor/qcom/shamu/proprietary/mpdecision:system/bin/mpdecision:qcom \
     vendor/qcom/shamu/proprietary/netmgrd:system/bin/netmgrd:qcom \
@@ -46,6 +51,7 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/radish:system/bin/radish:qcom \
     vendor/qcom/shamu/proprietary/rundiag:system/bin/rundiag:qcom \
     vendor/qcom/shamu/proprietary/sensors.qcom:system/bin/sensors.qcom:qcom \
+    vendor/qcom/shamu/proprietary/tcmd_mini:system/bin/tcmd_mini:qcom \
     vendor/qcom/shamu/proprietary/test_diag:system/bin/test_diag:qcom \
     vendor/qcom/shamu/proprietary/thermal-engine:system/bin/thermal-engine:qcom \
     vendor/qcom/shamu/proprietary/time_daemon:system/bin/time_daemon:qcom \
@@ -56,6 +62,9 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw:qcom \
     vendor/qcom/shamu/proprietary/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw:qcom \
     vendor/qcom/shamu/proprietary/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw:qcom \
+    vendor/qcom/shamu/proprietary/cy8c20247_24lkxi.hex:system/vendor/firmware/cy8c20247_24lkxi.hex:qcom \
+    vendor/qcom/shamu/proprietary/rcsimssettings.xml:system/etc/permissions/rcsimssettings.xml:qcom \
+    vendor/qcom/shamu/proprietary/rcsservice.xml:system/etc/permissions/rcsservice.xml:qcom \
     vendor/qcom/shamu/proprietary/flp.conf:system/etc/flp.conf:qcom \
     vendor/qcom/shamu/proprietary/qmi_fw.conf:system/etc/qmi_fw.conf:qcom \
     vendor/qcom/shamu/proprietary/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf:qcom \
@@ -66,6 +75,10 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libaudioroute.so:system/lib/libaudioroute.so:qcom \
     vendor/qcom/shamu/proprietary/libdetectmodem.so:system/lib/libdetectmodem.so:qcom \
     vendor/qcom/shamu/proprietary/libgps.utils.so:system/lib/libgps.utils.so:qcom \
+    vendor/qcom/shamu/proprietary/libimscamera_jni.so:system/lib/libimscamera_jni.so:qcom \
+	vendor/qcom/shamu/proprietary/libimscamera_jni.so:system/app/ims/lib/arm/libimscamera_jni.so:qcom \
+    vendor/qcom/shamu/proprietary/libimsmedia_jni.so:system/lib/libimsmedia_jni.so:qcom \
+	vendor/qcom/shamu/proprietary/libimsmedia_jni.so:system/app/ims/lib/arm/libimsmedia_jni.so:qcom \
     vendor/qcom/shamu/proprietary/libloc_core.so:system/lib/libloc_core.so:qcom \
     vendor/qcom/shamu/proprietary/libloc_eng.so:system/lib/libloc_eng.so:qcom \
     vendor/qcom/shamu/proprietary/libmdmdetect.so:system/lib/libmdmdetect.so:qcom \
@@ -111,9 +124,11 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so:qcom \
     vendor/qcom/shamu/proprietary/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so:qcom \
     vendor/qcom/shamu/proprietary/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so:qcom \
+    vendor/qcom/shamu/proprietary/libfrsdk.so:system/vendor/lib/egl/libfrsdk.so:qcom \
     vendor/qcom/shamu/proprietary/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so:qcom \
     vendor/qcom/shamu/proprietary/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so:qcom \
     vendor/qcom/shamu/proprietary/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so:qcom \
+    vendor/qcom/shamu/proprietary/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so:qcom \
     vendor/qcom/shamu/proprietary/activity_recognition.msm8084.so:system/vendor/lib/hw/activity_recognition.msm8084.so:qcom \
     vendor/qcom/shamu/proprietary/flp.msm8084.so:system/vendor/lib/hw/flp.msm8084.so:qcom \
     vendor/qcom/shamu/proprietary/sensors.msm8084.so:system/vendor/lib/hw/sensors.msm8084.so:qcom \
@@ -126,6 +141,7 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libadreno_utils.so:system/vendor/lib/libadreno_utils.so:qcom \
     vendor/qcom/shamu/proprietary/libaudcal.so:system/vendor/lib/libaudcal.so:qcom \
     vendor/qcom/shamu/proprietary/libbccQTI.so:system/vendor/lib/libbccQTI.so:qcom \
+    vendor/qcom/shamu/proprietary/libbt-vendor.so:system/vendor/lib/libbt-vendor.so:qcom \
     vendor/qcom/shamu/proprietary/libC2D2.so:system/vendor/lib/libC2D2.so:qcom \
     vendor/qcom/shamu/proprietary/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so:qcom \
     vendor/qcom/shamu/proprietary/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so:qcom \
@@ -155,6 +171,7 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_cpp.so:system/vendor/lib/libchromatix_imx214_cpp.so:qcom \
+    vendor/qcom/shamu/proprietary/libchromatix_imx214_cpp_snap.so:system/vendor/lib/libchromatix_imx214_cpp_snap.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_hfr_60.so:system/vendor/lib/libchromatix_imx214_hfr_60.so:qcom \
@@ -163,10 +180,12 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so:qcom \
+    vendor/qcom/shamu/proprietary/libcne.so:system/vendor/lib/libcne.so:qcom \
     vendor/qcom/shamu/proprietary/libcneapiclient.so:system/vendor/lib/libcneapiclient.so:qcom \
     vendor/qcom/shamu/proprietary/libconfigdb.so:system/vendor/lib/libconfigdb.so:qcom \
     vendor/qcom/shamu/proprietary/libcsd-client.so:system/vendor/lib/libcsd-client.so:qcom \
     vendor/qcom/shamu/proprietary/libdiag.so:system/vendor/lib/libdiag.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so:qcom \
     vendor/qcom/shamu/proprietary/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so:qcom \
     vendor/qcom/shamu/proprietary/libdrmfs.so:system/vendor/lib/libdrmfs.so:qcom \
     vendor/qcom/shamu/proprietary/libdrmtime.so:system/vendor/lib/libdrmtime.so:qcom \
@@ -175,6 +194,13 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libgeofence.so:system/vendor/lib/libgeofence.so:qcom \
     vendor/qcom/shamu/proprietary/libgsl.so:system/vendor/lib/libgsl.so:qcom \
     vendor/qcom/shamu/proprietary/libidl.so:system/vendor/lib/libidl.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imss.so:system/vendor/lib/lib-imss.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsvt.so:system/vendor/lib/lib-imsvt.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-imsxml.so:system/vendor/lib/lib-imsxml.so:qcom \
     vendor/qcom/shamu/proprietary/libizat_core.so:system/vendor/lib/libizat_core.so:qcom \
     vendor/qcom/shamu/proprietary/libjpegehw.so:system/vendor/lib/libjpegehw.so:qcom \
     vendor/qcom/shamu/proprietary/liblbs_core.so:system/vendor/lib/liblbs_core.so:qcom \
@@ -271,17 +297,38 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so:qcom \
     vendor/qcom/shamu/proprietary/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so:qcom \
     vendor/qcom/shamu/proprietary/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so:qcom \
     vendor/qcom/shamu/proprietary/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so:qcom \
     vendor/qcom/shamu/proprietary/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so:qcom \
     vendor/qcom/shamu/proprietary/librpmb.so:system/vendor/lib/librpmb.so:qcom \
     vendor/qcom/shamu/proprietary/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so:qcom \
     vendor/qcom/shamu/proprietary/librs_adreno.so:system/vendor/lib/librs_adreno.so:qcom \
     vendor/qcom/shamu/proprietary/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so:qcom \
+    vendor/qcom/shamu/proprietary/libssd.so:system/vendor/lib/libssd.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so:qcom \
+    vendor/qcom/shamu/proprietary/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so:qcom \
+    vendor/qcom/shamu/proprietary/libscale.so:system/vendor/lib/libscale.so:qcom \
     vendor/qcom/shamu/proprietary/libsensor1.so:system/vendor/lib/libsensor1.so:qcom \
     vendor/qcom/shamu/proprietary/libsensor_reg.so:system/vendor/lib/libsensor_reg.so:qcom \
     vendor/qcom/shamu/proprietary/libthermalclient.so:system/vendor/lib/libthermalclient.so:qcom \
     vendor/qcom/shamu/proprietary/libthermalioctl.so:system/vendor/lib/libthermalioctl.so:qcom \
     vendor/qcom/shamu/proprietary/libtime_genoff.so:system/vendor/lib/libtime_genoff.so:qcom \
     vendor/qcom/shamu/proprietary/libTimeService.so:system/vendor/lib/libTimeService.so:qcom \
+    vendor/qcom/shamu/proprietary/libvcel.so:system/vendor/lib/libvcel.so:qcom \
+    vendor/qcom/shamu/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so:qcom \
+    vendor/qcom/shamu/proprietary/libwvm.so:system/vendor/lib/libwvm.so:qcom \
+    vendor/qcom/shamu/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so:qcom \
     vendor/qcom/shamu/proprietary/libxml.so:system/vendor/lib/libxml.so:qcom \
+    vendor/qcom/shamu/proprietary/wlutil:system/vendor/xbin/wlutil:qcom \
+
+PRODUCT_PACKAGES += \
+	atfwd \
+	CNEService \
+	ims \
+	rcsimssettings \
+	rcsservice \
+	TimeService
 
