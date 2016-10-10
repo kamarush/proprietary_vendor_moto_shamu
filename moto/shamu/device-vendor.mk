@@ -13,13 +13,7 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-	AppDirectedSMSProxy \
-    BuaContactAdapter \
-	MotoSignatureApp \
-	TriggerEnroll \
-	TriggerTrainingService \
-	VZWAPNService \
-	VZWAPNLib
+    BuaContactAdapter
 
 LOCAL_STEM := shamu/device-partial.mk
 
