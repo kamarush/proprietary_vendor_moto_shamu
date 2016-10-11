@@ -159,6 +159,7 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/shamu/proprietary/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_cpp.so:system/vendor/lib/libchromatix_imx214_cpp.so:qcom \
+    vendor/qcom/shamu/proprietary/libchromatix_imx214_cpp_snap.so:system/vendor/lib/libchromatix_imx214_cpp_snap.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so:qcom \
     vendor/qcom/shamu/proprietary/libchromatix_imx214_hfr_60.so:system/vendor/lib/libchromatix_imx214_hfr_60.so:qcom \
